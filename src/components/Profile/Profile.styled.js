@@ -5,45 +5,47 @@ export const Wrapper = styled.div`
   border-radius: 4px;
   width: 350px;
   background-color: ${p => p.theme.colors.background};
+  margin-bottom: 22px;
 `;
 
 export const Avatar = styled.img`
-  width: 100%;
+  /* width: 100%; */
   border-radius: 50%;
   margin-bottom: 16px;
+  margin-top: 16px;
 `;
 
 export const Username = styled.p`
-  font-size: 28px;
+  font-size: ${p => p.theme.fontSizes.xl};
   font-weight: 700;
   color: ${p => p.theme.colors.black};
   margin-bottom: 8px;
 `;
 
 export const Tag = styled.p`
-  font-size: 24px;
+  font-size: ${p => p.theme.fontSizes.l};
   font-weight: 500;
   color: ${p => p.theme.colors.gray};
   margin-bottom: 8px;
 `;
 
 export const Location = styled.p`
-  font-size: 20px;
+  font-size: ${p => p.theme.fontSizes.m};
   font-weight: 500;
   color: ${p => p.theme.colors.gray};
   margin-bottom: 8px;
 `;
 
 export const Label = styled.span`
-  font-size: 18px;
+  font-size: ${p => p.theme.fontSizes.s};
   font-weight: 500;
-  display: block;
   color: ${p => p.theme.colors.gray};
+  display: block;
   margin-bottom: 4px;
 `;
 
 export const Quantity = styled.span`
-  font-size: 20px;
+  font-size: ${p => p.theme.fontSizes.m};
   font-weight: 700;
   color: ${p => p.theme.colors.black};
 `;
@@ -52,6 +54,7 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   padding: 8px;
 `;
 

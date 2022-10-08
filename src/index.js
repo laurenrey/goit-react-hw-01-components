@@ -11,6 +11,13 @@ const theme = {
     background: '#fff0db',
     backgroundSecondary: '#eed9c4',
   },
+  fontSizes: {
+    xs: '14px',
+    s: '18px',
+    m: '20px',
+    l: '24px',
+    xl: '28px',
+  },
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

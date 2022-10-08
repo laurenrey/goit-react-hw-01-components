@@ -16,7 +16,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Wrapper key={tag}>
       <Description>
-        <Avatar src={avatar} alt={username} />
+        <Avatar src={avatar} alt={username} width="130" />
         <Username>{username}</Username>
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
