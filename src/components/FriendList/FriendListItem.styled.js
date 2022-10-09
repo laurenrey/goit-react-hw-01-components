@@ -4,19 +4,19 @@ export const FriendItemCard = styled.li`
   display: flex;
   align-items: center;
   border: 1px solid ${p => p.theme.colors.black};
-  border-radius: 4px;
+  border-radius: ${p => p.theme.radii.bradius};
   width: 280px;
   padding: 8px;
   :not(:last-child) {
     margin-bottom: 12px;
   }
-  box-shadow: 6px 16px 19px -8px rgba(90, 83, 83, 0.74);
+  box-shadow: ${p => p.theme.shadows.shadow};
 `;
 
 export const Status = styled.span`
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: ${p => p.theme.radii.round};
   background-color: ${p =>
     p.isOnline ? p.theme.colors.online : p.theme.colors.offline};
   margin-left: 12px;

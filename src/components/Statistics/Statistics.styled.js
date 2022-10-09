@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   width: 400px;
   border: 1px solid ${p => p.theme.colors.gray};
-  border-radius: 4px;
+  border-radius: ${p => p.theme.radii.bradius};
   text-align: center;
   margin-bottom: 32px;
 `;

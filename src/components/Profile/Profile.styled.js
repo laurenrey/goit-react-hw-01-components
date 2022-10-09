@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   border: 1px solid ${p => p.theme.colors.gray};
-  border-radius: 4px;
+  border-radius: ${p => p.theme.radii.bradius};
   width: 350px;
   background-color: ${p => p.theme.colors.background};
   margin-bottom: 32px;
 `;
 
 export const Avatar = styled.img`
-  border-radius: 50%;
+  border-radius: ${p => p.theme.radii.round};
   margin-bottom: 16px;
   margin-top: 16px;
 `;
