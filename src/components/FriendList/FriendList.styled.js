@@ -1,5 +1,5 @@
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// export const FriendList = styled.ul`
-
-// `
+export const Friends = styled.ul`
+  margin-bottom: 32px;
+`;

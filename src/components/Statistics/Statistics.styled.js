@@ -5,6 +5,7 @@ export const Wrapper = styled.section`
   border: 1px solid ${p => p.theme.colors.gray};
   border-radius: 4px;
   text-align: center;
+  margin-bottom: 32px;
 `;
 
 export const Title = styled.h2`
@@ -18,6 +19,7 @@ export const Title = styled.h2`
 export const StatList = styled.ul`
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: minmax(50px, 1fr);
 `;
 
 export const StatItem = styled.li`
@@ -25,6 +27,9 @@ export const StatItem = styled.li`
   flex-direction: column;
   text-align: center;
   border-top: 1px solid ${p => p.theme.colors.gray};
+  :not(:last-child) {
+    border-right: 1px solid ${p => p.theme.colors.gray};
+  }
   padding: 16px;
 `;
 

@@ -5,11 +5,10 @@ export const Wrapper = styled.div`
   border-radius: 4px;
   width: 350px;
   background-color: ${p => p.theme.colors.background};
-  margin-bottom: 22px;
+  margin-bottom: 32px;
 `;
 
 export const Avatar = styled.img`
-  /* width: 100%; */
   border-radius: 50%;
   margin-bottom: 16px;
   margin-top: 16px;

@@ -10,6 +10,8 @@ const theme = {
     gray: '#444444',
     background: '#fff0db',
     backgroundSecondary: '#eed9c4',
+    online: '#00FF00',
+    offline: '#FF0000',
   },
   fontSizes: {
     xs: '14px',
