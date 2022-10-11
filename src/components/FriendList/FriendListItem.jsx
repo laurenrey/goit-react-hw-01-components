@@ -20,5 +20,5 @@ FriendListItem.propTypes = {
   name: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  type: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
 };
