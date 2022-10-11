@@ -6,9 +6,9 @@ import {
   FriendName,
 } from './FriendListItem.styled';
 
-export const FriendListItem = ({ avatar, name, isOnline, id }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <FriendItemCard key={id}>
+    <FriendItemCard>
       <Status isOnline={isOnline}></Status>
       <FriendAvatar src={avatar} alt={name} width="48" />
       <FriendName>{name}</FriendName>
@@ -20,5 +20,4 @@ FriendListItem.propTypes = {
   name: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };
