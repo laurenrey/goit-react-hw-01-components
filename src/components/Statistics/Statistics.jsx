@@ -8,7 +8,7 @@ import {
 } from './Statistics.styled';
 
 import PropTypes from 'prop-types';
-import { getRandomColor } from 'components/getRandomColor';
+import { getRandomColor } from 'services/getRandomColor';
 
 export const Statistics = ({ stats, title }) => {
   return (
@@ -31,8 +31,9 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string,
-      percentage: PropTypes.number,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+      type: PropTypes.string.isRequired,
     })
   ),
 };
